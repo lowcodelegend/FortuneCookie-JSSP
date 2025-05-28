@@ -14,14 +14,63 @@ A lightweight K2 SmartObject broker that returns random fortune cookie messages,
 
 ---
 
-## Installation
+## Deployment
 
-1. Clone or copy this repository into your K2 App.
-2. Ensure the required npm dependencies are available:
+Most users **do not need to build or modify the code** themselves.
+
+### Option 1: Deploy by File
+
+1. **Copy the built file**  
+   The distributable file is already built for you:  
+   - Use `dist/index.js` from this repository.
+2. **(Optional) Rename**  
+   You may rename `index.js` to something more descriptive, such as `fortune-cookie-broker.jssp`:
+   ```bash
+   mv dist/index.js dist/fortune-cookie-broker.jssp
+   ```
+3. **Upload in K2**  
+   - Navigate to  
+     `System > Management > SmartObjects > SmartObjects > JavaScript Service Provider`
+   - Click **Create or Update from File** and select your `.jssp` file.
+
+### Option 2: Deploy by URL
+
+1. **Host** the built file (`dist/index.js`) at a public URL of your choice.
+2. **Register in K2**  
+   - Go to  
+     `System > Management > SmartObjects > SmartObjects > JavaScript Service Provider`
+   - Use **Create or Update from URL** and provide the direct link to your hosted file.
+
+---
+
+## Building the Broker (For Developers or Custom Builds)
+
+If you need to build the broker yourself (for customization or contributing):
+
+1. **Clone or fork this repository.**
+2. **Install dependencies:**
+    ```bash
+    npm install
     ```
-    npm install fortune-cookie slugify dayjs
+3. **Build the distributable file:**
+    ```bash
+    npm run build
     ```
-3. Deploy your JSSP as usual.
+4. The output file will appear in the `dist` folder as `index.js`.
+
+You can now follow the deployment instructions above using your built file.
+
+---
+
+## Configuration
+
+After uploading or registering the broker file,  
+**create a service instance** for the Fortune Cookie Broker in your K2 environment.  
+You can do this via:
+- The K2 Management Site  
+- Or the SmartObject Service Tester
+
+No additional configuration is required.
 
 ---
 
