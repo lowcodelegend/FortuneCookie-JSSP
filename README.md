@@ -1,80 +1,80 @@
-K2 TypeScript Broker Template
-===
+\# Fortune Cookie Broker
 
-This template demonstrates best-practices for developing a K2 Broker using TypeScript.
+A lightweight K2 SmartObject broker that returns random fortune cookie messages, complete with a slug and timestamp—powered by npm modules!
 
-<!-- TOC -->
-* [K2 TypeScript Broker Template](#k2-typescript-broker-template)
-  * [Features](#features)
-  * [Getting Started](#getting-started)
-  * [Running Unit Tests](#running-unit-tests)
-  * [Building your bundled JS](#building-your-bundled-js)
-  * [Creating a service type](#creating-a-service-type)
-  * [License](#license)
-  * [Migration from Ava to Vitest](#migration-from-ava-to-vitest)
-<!-- TOC -->
+---
 
-## Features
+\## Features
 
-- Full object model intellisense for making development easier
-- Sample broker code that accesses jsonplaceholder.
-- Sample unit tests with mocks and code coverage.
-- Vite configuration for TypeScript.
+\- Returns a random fortune cookie message.  
+\- Each fortune is provided with:  
+  \- **Slug:** A URL-friendly version of the fortune.  
+  \- **Date:** The exact date and time when the fortune was fetched.  
+\- Powered by community npm modules: [\`fortune-cookie\`](https://www.npmjs.com/package/fortune-cookie), [\`slugify\`](https://www.npmjs.com/package/slugify), and [\`dayjs\`](https://www.npmjs.com/package/dayjs).
 
-## Getting Started
+---
 
-This template requires [Node.js](https://nodejs.org/) v22.5.1+ to run.
+\## Installation
 
-Install the dependencies and devDependencies:
+1. Clone or copy this repository into your K2 App.  
+2. Ensure the required npm dependencies are available:  
+    \```
+    npm install fortune-cookie slugify dayjs
+    \```
+3. Deploy your JSSP as usual.
 
-```bash
-npm install
-```
+---
 
-Alternatively, use pnpm to reduce the size of the `node_modules` directory:
+\## Objects \& Methods
 
-```bash
-npm install -g pnpm # Only required once
-pnpm install
-```
+\### Fortune
 
-See the documentation for [@k2oss/k2-broker-core](https://www.npmjs.com/package/@k2oss/k2-broker-core)
-for more information about how to use the broker SDK package.
+\| Property \| Type   \| Description                  \|
+\|----------\|--------\|------------------------------\|
+\| fortune  \| string \| The fortune cookie message.   \|
+\| slug     \| string \| URL-friendly slug of fortune. \|
+\| date     \| string \| Date and time generated.      \|
 
-## Running Unit Tests
+\#### Methods
 
-To run the unit tests, run:
+\| Method \| Type \| Description           \| Inputs \| Outputs              \|
+\|--------\|------\|-----------------------\|--------\|----------------------\|
+\| get    \| read \| Returns a new fortune \| none   \| fortune, slug, date  \|
 
-```bash
-npm test
-pnpm test # Alternative
-```
+---
 
-You will find the code coverage results in [coverage/index.html](./coverage/index.html).
+\## Usage
 
-## Building your bundled JS
+Call the **Fortune** object and use the \`get\` method to retrieve a fresh fortune cookie message, its slug, and the timestamp.
 
-When you're ready to build your broker, run the following command
+\### Example Output
 
-```bash
-npm run build
-pnpm run build # Alternative
-```
+\```
+{
+  "fortune": "You will have a pleasant surprise.",
+  "slug": "you-will-have-a-pleasant-surprise",
+  "date": "2025-05-28 13:14:15"
+}
+\```
 
-You will find the results in the [dist/index.js](./dist/index.js).
+---
 
-## Creating a service type
+\## Development Notes
 
-Once you have a bundled .js file, upload it to your repository (anonymously
-accessible) and register the service type using the system SmartObject located
-at System > Management > SmartObjects > SmartObjects > JavaScript Service
-Provider and run the Create From URL method.
+\- **System Name:** \`com.demo.fortunecookie\`  
+\- **Display Name:** \`Fortune Cookie Broker\`  
+\- **Description:** Returns random fortune cookies with extra metadata, powered by npm modules!
 
-## License
+---
 
-MIT, found in the [LICENSE](./LICENSE) file.
+\## License
 
-[www.k2.com](https://www.k2.com)
+MIT
 
-## Migration from Ava to Vitest
-If you used a previous version of this template and want to migrate to Vitest, please review the [Migration.md](./Migration.md) guide.
+---
+
+\## Credits
+
+\- [\`fortune-cookie\`](https://www.npmjs.com/package/fortune-cookie)  
+\- [\`slugify\`](https://www.npmjs.com/package/slugify)  
+\- [\`dayjs\`](https://www.npmjs.com/package/dayjs)
