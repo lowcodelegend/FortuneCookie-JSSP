@@ -1,0 +1,621 @@
+var q = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {};
+function G(d) {
+  return d && d.__esModule && Object.prototype.hasOwnProperty.call(d, "default") ? d.default : d;
+}
+const te = [
+  "With integrity and consistency -- your credits are piling up.",
+  "Reach out your hand today to support others who need you.",
+  "It is not the outside riches bit the inside ones that produce happiness.",
+  "How dark is dark?, How wise is wise?",
+  "We can admire all we see, but we can only pick one.",
+  "The man who has no imagination has no wings.",
+  "To courageously shoulder the responsibility of one's mistake is character.",
+  "We can't help everyone. But everyone can help someone.",
+  "You discover treasures where others see nothing unusual.",
+  "Make all you can, save all you can, give all you can.",
+  "Understanding the nature of change, changes the nature.",
+  "You will be unusually successful in business.",
+  "Your spirit of adventure leads you down an exiting new path.",
+  "Genius is one percent inspiration and ninety-nine percent perspiration.",
+  "You are the master of every situation.",
+  "Be brave enough to live creatively.",
+  "Cookies go stake. Fortunes are forever.",
+  "Your ingenuity and imagination will get results.",
+  "Unnecessary possessions are unnecessary burdens.",
+  "Ability is not something to be shown off.",
+  "If you wish to see the best in others, show the best of yourself.",
+  "Your power is in your ability to decide.",
+  "Wherever you go, whenever you can, try to leave a gift.",
+  "Kind words can be shot and easy to speak, but their echoes are truly endless.",
+  "Your ingenuity and imagination will get results.",
+  "Age can never hope to with you while your heart is young.",
+  "Example is better than perception.",
+  "Idleness is the holiday of fools.",
+  "Don't be pushed by your problems. Be led by your dreams.",
+  "Many receive advice, only the wise profit from it.",
+  "You will have good luck and overcome many hardships.",
+  "A good way to keep healthy is to eat more Chinese food.",
+  "Today's profits are yesterday's good well ripened.",
+  "LSDBS - Let Something Good Be Said.",
+  "There is in the worst of fortunes the best change of a happy ending.",
+  "Service to many leads to greatness.",
+  "Desire, like the atom, is explosive with creative force.",
+  "I think and that is all that I am.",
+  "Judge each day not by the harvest you reap but by the seeds you plant.",
+  "Yesterday was a dare to struggle. Today is a dare to win.",
+  "Make everyday your best. You will improve yourself greatly.",
+  "You must be willing to act today in order to succeed.",
+  "Venture not all in one boat.",
+  "Suppressing a moment of anger may save a day of sorrow.",
+  "Never be less than your dreams.",
+  "The good times start when I count to 3: 1... 2... 3.",
+  "An inch of time is an inch of gold.",
+  "If you chase two rabbits both will escape.",
+  "You will soon be surrounded by good friends and laughter.",
+  "Haste does not bring success.",
+  "You will stumble into the path that will lead your life to happiness.",
+  "You will always be successful in you professional career.",
+  "Good news will come to you from far away.",
+  "Service is the rent you pay for having room on the Earth.",
+  "Be smart, but never show it.",
+  "The only certainty is that nothing is certain.",
+  "You or a close friend will be married soon.",
+  "We will not know the worth of water 'till the well is dry.",
+  "You are talented in many ways.",
+  "Do your best to make it happen",
+  "You will find great forces in unexpected places.",
+  "What you see in the mirror, and what you are can be two different images.",
+  "Excuses are easy to manufacture, and hard to sell.",
+  "Do onto others as you wish others do onto you.",
+  "Struggle as and hard as you can for whatever you believe in.",
+  "You have a pair of shining eyes.",
+  "You should be able to undertake and complete anything.",
+  "Your principles mean more to you than any money or success.",
+  "Forgiveness does not change the past, but it does enlarge the future.",
+  "Stand tall! Don't look down upon yourself.",
+  "Every truly great accomplishment is at first impossible.",
+  "Courage is not the absence of fear; it is the conquest of it.",
+  "Wise man seldom talks.",
+  "If you have a job without aggravations, you don't have a job.",
+  "You are broad minded and socially active.",
+  "Don't put off till tomorrow what can be enjoyed today.",
+  "A family reunion in the coming months will be a tremendous success!",
+  "Enthusiastic leadership gets you a promotion when you least expect it.",
+  "Calamity is the touchstone of a brave mind.",
+  "Everything you add to the truth subtracts from the truth.",
+  "You are going to take a vacation.",
+  "Commitment is the stuff character is made of; the power to change the face of things.",
+  "A friend asks only for your time not your money.",
+  "A friend asks only for your time not your money.",
+  "A handful of patience is worth more than a bushel of brains.",
+  "A handful of patience is worth more than a bushel of brains.",
+  "To be eighty years young is more cheerful and hopeful than forty years old.",
+  "To be eighty years young is more cheerful and hopeful than forty years old.",
+  "A person is not wise simply because one talks a lot.",
+  "It takes guts to get out of the ruts.",
+  "The greatest quality is seeking to serve others.",
+  "Most people, once they graduate from the school of Hard Knocks, automatically enroll.",
+  "Everyone needs to be loved, especially those do not deserve it.",
+  "Winning isn't everything but the will to win is.",
+  "You display the wonderful traits of charm and courtesy.",
+  "You will be awarded some great honor.",
+  "Don't build your happiness on other's sorrow.",
+  "The best thing about growing older is that it takes such a long time.",
+  "You have a deep interest in all that is artistic.",
+  "Kiss is not a kiss without the heart.",
+  "Don't be afraid of fear.",
+  "There's no point to being grown up if you can't be childish sometimes.",
+  "You will learn something new every day.",
+  "You can't go far in a rowboat without oars.",
+  "Failure is the virtual way to prepare you for great responsibilities.",
+  "Many receive advice only the wise profit by it.",
+  "A banker is someone who lends you an umbrella when the sun is shining.",
+  "Maturity: Do your duty without being supervised.",
+  "Your cheerful outlook is one of your assets.",
+  "You can't have everything... where would you put it all?",
+  "You have an unusually magnetic personality.",
+  "You have an unusually magnetic personality.",
+  "He who hurries cannot walk with dignity.",
+  "You never hesitate to tackle the most difficult problems.",
+  "Your emotional nature is strong and sensitive.",
+  "Serious trouble will bypass you.",
+  "If you're riding ahead of the heard, look back once in a while to make sure it's still there.",
+  "You have an iron will, which helps you succeed in everything.",
+  "Three can keep a secret if you get rid of two.",
+  "Everywhere you choose to go friendly faces will greet you.",
+  "Nothing gets in the way of your vision of yourself in the future.",
+  "To understand is hard. Once one understands, action is easy.",
+  "The philosophy of one century is the common sense of the next.",
+  "You will make many changes before settling satisfactorily.",
+  "When in anger, sing the alphabet.",
+  "Wealth is a means to an end... not the end itself.",
+  "It's high time for one of your most promising ideas.",
+  "Small opportunities are often the beginning of great enterprises.",
+  "People are drawn to you and look to you for advice.",
+  "Keep your feet on the ground even though friends flatter you.",
+  "Do a good deed anonymously. You will make a difference in your life.",
+  "Financial prosperity is coming your way!",
+  "A healthy body will benefit you forever.",
+  "Mental activity keeps you busy at this time.",
+  `Say "I love you" and mean it. You can't do that enough.`,
+  "The world is always ready to receive talent with open arms.",
+  "Enjoy the small things you find on your path.",
+  "Good food brings good health and longevity.",
+  "The act of giving is more important than receiving.",
+  "Every burden is a blessing.",
+  "Prosperity is in your fortune.",
+  "Your next interview will result in a job.",
+  "Accept the challenges, so that you may feel the exhilaration of victory.",
+  "The future belongs to those who believe in the beauty of their dreams.",
+  "Peace begins with a smile.",
+  "Engage in group activities that further transformation.",
+  "Be satisfied with what you already own.",
+  "Your business will assume vast proportions.",
+  "You have a potential urge and the ability for accomplishment.",
+  "People find it difficult to resist your persuasive manner.",
+  "Action is worry's worst enemy.",
+  "Men do not fail... they give up trying.",
+  "Are your legs tired? You been running through someone's mind ALL day long.",
+  "You find beauty in ordinary things. Do not loose this ability.",
+  "Will you let compassion to manage your wishes.",
+  "A truly great person never puts away the simplicity of a child.",
+  "Home is where your heart is.",
+  "A huge fortune at home is not as good as money in use.",
+  "Humor is the affirmation of dignity.",
+  "Your heavy desire, only allow you to see what you are looking for.",
+  "TEAMS - Together Everyone Achieves More Success.",
+  "You have a heart of gold.",
+  "Life to you is a bold and dashing responsibility.",
+  "Want to learn how to love, start with the one you hate.",
+  "There is beauty in simplicity.",
+  "Learning is a treasure which accompanies us everywhere.",
+  "It is much easier to be critical than to be correct.",
+  "This person's love is just and true. You may rely on it.",
+  "You will be spending time outdoors, in the mountains, near water.",
+  "Friends long absent are coming back to you.",
+  "He joyfulness of a man prolongeth his days.",
+  "Regenerate your system through diet and exercise. Save the cookies!",
+  "Listen to the wisdom of the old.",
+  "Even the toughest of days have bright spots, just do your best.",
+  "Your talents will be recognized and suitably rewarded.",
+  "Fortitude is the guard and support of the other virtues.",
+  "When the moment comes, take the one from the right.",
+  "Old friends make best friends.",
+  "You have an ability to sense and know higher truth.",
+  "People learn little from success, but much from failure.",
+  "Keep in mind your most cherished dreams of the future.",
+  "You always do things the right way.",
+  "Act boldly and unseen forces will come to your aid.",
+  "Join a new club today, you'll be surprised.",
+  "Your many hidden talents will become obvious to those around you.",
+  "Some people never have anything except ideas, Go do it.",
+  "A real patriot is the fellow who gets a parking ticket and rejoices that the system works.",
+  "You are more likely to give than give in.",
+  "If you bite the hand that feeds you, it wont taste as good as the food you were fed.",
+  "The heart has its reasons, which the reasons dos not know.",
+  "Even the longest of days will come to an end.",
+  "You enjoy giving gifts of yourself to others, you will be rewarded!",
+  "There are no stupid questions, just stupid answer.",
+  "Success is an accumulation of successful days.",
+  "You have a friendly heart and are well admired.",
+  "Just because you put tap shoes on an elephant does not mean it can dance.",
+  "Start to look for you faults if you never made mistakes.",
+  "Good sense is the master of human life.",
+  "Your luck has been completely changed today.",
+  "Ask advice, but use your own common sense.",
+  "A judgment will rule in your favor.",
+  "Your winsome smile will be your sure protection.",
+  "Go confidently in the direction of your dreams.",
+  "The skills you have gathered will one day come in handy.",
+  "Look forward to great fortune and a new lease on life!",
+  "You will travel to many places.",
+  "You will enjoy a trip to Asia.",
+  "Better to do something imperfectly than to do nothing perfectly.",
+  "Pure logic is the ruin of the spirit.",
+  "You will have a long and wealthy life.",
+  "Your smile always brightens the cloudiest days.",
+  "A friend in the market is better than money in the purse.",
+  "A new venture will be a success.",
+  "It is by those who have suffered that the world is most advanced.",
+  "Everything must have a beginning.",
+  "The important thing is to express yourself.",
+  "The real meaning of enlightenment is to gaze with undimmed eyes on all undimmed.",
+  "New and rewarding opportunities will soon develop for you.",
+  "Seek to assert your devotion when a worthy situation arises.",
+  "The glass is not half-empty, it's just twice too big.",
+  "A feeling is an idea with roots.",
+  "Your present plans are going to succeed.",
+  "A sound mind and healthy body bring many happy events to your family.",
+  "Plan your work and work your plan.",
+  "Courage is rightly considered the foremost of the virtues, for upon it, all others depend.",
+  "Say hello to others. You will have a happier day.",
+  "Don't let your limitations overshadow your talents.",
+  "Love is the affinity which links and draws together the elements of the world.",
+  "You should be able to undertake and complete anything.",
+  "Character development is the true aim  of education.",
+  "Trust him, but sill keep your eyes open.",
+  "He who is shipwrecked the second time cannot lay the blame on Neptune.",
+  "To get respect from others, one must first give respect to others.",
+  "Walk the words you talk and talk the words you walk.",
+  "People forget how fast you did a job - but they remember how well you did it.",
+  "The time is right to make new friends.",
+  "Do what is right, not what you should.",
+  "Punctuality is the politeness of kings and the duty of gentle people everywhere.",
+  "If you wait too long for the perfect moment, the perfect moment will pass you by.",
+  "Your heart is pure, and your mind clear, and soul devout.",
+  "Walk with a good heart and you will run with success.",
+  "We should not let our fears hold us back from pursuing our hopes.",
+  "Do not mistake temptation for opportunity.",
+  "You will soon meet the person you admire.",
+  "A good time to start something new.",
+  "All generalities are false.",
+  "Come back later... I am sleeping. (yes, cookies need their sleep too)",
+  "If at first you do not succeed... try something harder.",
+  "Your good listening skills will open many doors.",
+  "Two people shorten a road."
+];
+var oe = te;
+const Z = /* @__PURE__ */ G(oe);
+var K = { exports: {} };
+(function(d, I) {
+  (function(k, b, $) {
+    d.exports = $(), d.exports.default = $();
+  })("slugify", q, function() {
+    var k = JSON.parse(`{"$":"dollar","%":"percent","&":"and","<":"less",">":"greater","|":"or","¢":"cent","£":"pound","¤":"currency","¥":"yen","©":"(c)","ª":"a","®":"(r)","º":"o","À":"A","Á":"A","Â":"A","Ã":"A","Ä":"A","Å":"A","Æ":"AE","Ç":"C","È":"E","É":"E","Ê":"E","Ë":"E","Ì":"I","Í":"I","Î":"I","Ï":"I","Ð":"D","Ñ":"N","Ò":"O","Ó":"O","Ô":"O","Õ":"O","Ö":"O","Ø":"O","Ù":"U","Ú":"U","Û":"U","Ü":"U","Ý":"Y","Þ":"TH","ß":"ss","à":"a","á":"a","â":"a","ã":"a","ä":"a","å":"a","æ":"ae","ç":"c","è":"e","é":"e","ê":"e","ë":"e","ì":"i","í":"i","î":"i","ï":"i","ð":"d","ñ":"n","ò":"o","ó":"o","ô":"o","õ":"o","ö":"o","ø":"o","ù":"u","ú":"u","û":"u","ü":"u","ý":"y","þ":"th","ÿ":"y","Ā":"A","ā":"a","Ă":"A","ă":"a","Ą":"A","ą":"a","Ć":"C","ć":"c","Č":"C","č":"c","Ď":"D","ď":"d","Đ":"DJ","đ":"dj","Ē":"E","ē":"e","Ė":"E","ė":"e","Ę":"e","ę":"e","Ě":"E","ě":"e","Ğ":"G","ğ":"g","Ģ":"G","ģ":"g","Ĩ":"I","ĩ":"i","Ī":"i","ī":"i","Į":"I","į":"i","İ":"I","ı":"i","Ķ":"k","ķ":"k","Ļ":"L","ļ":"l","Ľ":"L","ľ":"l","Ł":"L","ł":"l","Ń":"N","ń":"n","Ņ":"N","ņ":"n","Ň":"N","ň":"n","Ō":"O","ō":"o","Ő":"O","ő":"o","Œ":"OE","œ":"oe","Ŕ":"R","ŕ":"r","Ř":"R","ř":"r","Ś":"S","ś":"s","Ş":"S","ş":"s","Š":"S","š":"s","Ţ":"T","ţ":"t","Ť":"T","ť":"t","Ũ":"U","ũ":"u","Ū":"u","ū":"u","Ů":"U","ů":"u","Ű":"U","ű":"u","Ų":"U","ų":"u","Ŵ":"W","ŵ":"w","Ŷ":"Y","ŷ":"y","Ÿ":"Y","Ź":"Z","ź":"z","Ż":"Z","ż":"z","Ž":"Z","ž":"z","Ə":"E","ƒ":"f","Ơ":"O","ơ":"o","Ư":"U","ư":"u","ǈ":"LJ","ǉ":"lj","ǋ":"NJ","ǌ":"nj","Ș":"S","ș":"s","Ț":"T","ț":"t","ə":"e","˚":"o","Ά":"A","Έ":"E","Ή":"H","Ί":"I","Ό":"O","Ύ":"Y","Ώ":"W","ΐ":"i","Α":"A","Β":"B","Γ":"G","Δ":"D","Ε":"E","Ζ":"Z","Η":"H","Θ":"8","Ι":"I","Κ":"K","Λ":"L","Μ":"M","Ν":"N","Ξ":"3","Ο":"O","Π":"P","Ρ":"R","Σ":"S","Τ":"T","Υ":"Y","Φ":"F","Χ":"X","Ψ":"PS","Ω":"W","Ϊ":"I","Ϋ":"Y","ά":"a","έ":"e","ή":"h","ί":"i","ΰ":"y","α":"a","β":"b","γ":"g","δ":"d","ε":"e","ζ":"z","η":"h","θ":"8","ι":"i","κ":"k","λ":"l","μ":"m","ν":"n","ξ":"3","ο":"o","π":"p","ρ":"r","ς":"s","σ":"s","τ":"t","υ":"y","φ":"f","χ":"x","ψ":"ps","ω":"w","ϊ":"i","ϋ":"y","ό":"o","ύ":"y","ώ":"w","Ё":"Yo","Ђ":"DJ","Є":"Ye","І":"I","Ї":"Yi","Ј":"J","Љ":"LJ","Њ":"NJ","Ћ":"C","Џ":"DZ","А":"A","Б":"B","В":"V","Г":"G","Д":"D","Е":"E","Ж":"Zh","З":"Z","И":"I","Й":"J","К":"K","Л":"L","М":"M","Н":"N","О":"O","П":"P","Р":"R","С":"S","Т":"T","У":"U","Ф":"F","Х":"H","Ц":"C","Ч":"Ch","Ш":"Sh","Щ":"Sh","Ъ":"U","Ы":"Y","Ь":"","Э":"E","Ю":"Yu","Я":"Ya","а":"a","б":"b","в":"v","г":"g","д":"d","е":"e","ж":"zh","з":"z","и":"i","й":"j","к":"k","л":"l","м":"m","н":"n","о":"o","п":"p","р":"r","с":"s","т":"t","у":"u","ф":"f","х":"h","ц":"c","ч":"ch","ш":"sh","щ":"sh","ъ":"u","ы":"y","ь":"","э":"e","ю":"yu","я":"ya","ё":"yo","ђ":"dj","є":"ye","і":"i","ї":"yi","ј":"j","љ":"lj","њ":"nj","ћ":"c","ѝ":"u","џ":"dz","Ґ":"G","ґ":"g","Ғ":"GH","ғ":"gh","Қ":"KH","қ":"kh","Ң":"NG","ң":"ng","Ү":"UE","ү":"ue","Ұ":"U","ұ":"u","Һ":"H","һ":"h","Ә":"AE","ә":"ae","Ө":"OE","ө":"oe","Ա":"A","Բ":"B","Գ":"G","Դ":"D","Ե":"E","Զ":"Z","Է":"E'","Ը":"Y'","Թ":"T'","Ժ":"JH","Ի":"I","Լ":"L","Խ":"X","Ծ":"C'","Կ":"K","Հ":"H","Ձ":"D'","Ղ":"GH","Ճ":"TW","Մ":"M","Յ":"Y","Ն":"N","Շ":"SH","Չ":"CH","Պ":"P","Ջ":"J","Ռ":"R'","Ս":"S","Վ":"V","Տ":"T","Ր":"R","Ց":"C","Փ":"P'","Ք":"Q'","Օ":"O''","Ֆ":"F","և":"EV","ء":"a","آ":"aa","أ":"a","ؤ":"u","إ":"i","ئ":"e","ا":"a","ب":"b","ة":"h","ت":"t","ث":"th","ج":"j","ح":"h","خ":"kh","د":"d","ذ":"th","ر":"r","ز":"z","س":"s","ش":"sh","ص":"s","ض":"dh","ط":"t","ظ":"z","ع":"a","غ":"gh","ف":"f","ق":"q","ك":"k","ل":"l","م":"m","ن":"n","ه":"h","و":"w","ى":"a","ي":"y","ً":"an","ٌ":"on","ٍ":"en","َ":"a","ُ":"u","ِ":"e","ْ":"","٠":"0","١":"1","٢":"2","٣":"3","٤":"4","٥":"5","٦":"6","٧":"7","٨":"8","٩":"9","پ":"p","چ":"ch","ژ":"zh","ک":"k","گ":"g","ی":"y","۰":"0","۱":"1","۲":"2","۳":"3","۴":"4","۵":"5","۶":"6","۷":"7","۸":"8","۹":"9","฿":"baht","ა":"a","ბ":"b","გ":"g","დ":"d","ე":"e","ვ":"v","ზ":"z","თ":"t","ი":"i","კ":"k","ლ":"l","მ":"m","ნ":"n","ო":"o","პ":"p","ჟ":"zh","რ":"r","ს":"s","ტ":"t","უ":"u","ფ":"f","ქ":"k","ღ":"gh","ყ":"q","შ":"sh","ჩ":"ch","ც":"ts","ძ":"dz","წ":"ts","ჭ":"ch","ხ":"kh","ჯ":"j","ჰ":"h","Ṣ":"S","ṣ":"s","Ẁ":"W","ẁ":"w","Ẃ":"W","ẃ":"w","Ẅ":"W","ẅ":"w","ẞ":"SS","Ạ":"A","ạ":"a","Ả":"A","ả":"a","Ấ":"A","ấ":"a","Ầ":"A","ầ":"a","Ẩ":"A","ẩ":"a","Ẫ":"A","ẫ":"a","Ậ":"A","ậ":"a","Ắ":"A","ắ":"a","Ằ":"A","ằ":"a","Ẳ":"A","ẳ":"a","Ẵ":"A","ẵ":"a","Ặ":"A","ặ":"a","Ẹ":"E","ẹ":"e","Ẻ":"E","ẻ":"e","Ẽ":"E","ẽ":"e","Ế":"E","ế":"e","Ề":"E","ề":"e","Ể":"E","ể":"e","Ễ":"E","ễ":"e","Ệ":"E","ệ":"e","Ỉ":"I","ỉ":"i","Ị":"I","ị":"i","Ọ":"O","ọ":"o","Ỏ":"O","ỏ":"o","Ố":"O","ố":"o","Ồ":"O","ồ":"o","Ổ":"O","ổ":"o","Ỗ":"O","ỗ":"o","Ộ":"O","ộ":"o","Ớ":"O","ớ":"o","Ờ":"O","ờ":"o","Ở":"O","ở":"o","Ỡ":"O","ỡ":"o","Ợ":"O","ợ":"o","Ụ":"U","ụ":"u","Ủ":"U","ủ":"u","Ứ":"U","ứ":"u","Ừ":"U","ừ":"u","Ử":"U","ử":"u","Ữ":"U","ữ":"u","Ự":"U","ự":"u","Ỳ":"Y","ỳ":"y","Ỵ":"Y","ỵ":"y","Ỷ":"Y","ỷ":"y","Ỹ":"Y","ỹ":"y","–":"-","‘":"'","’":"'","“":"\\"","”":"\\"","„":"\\"","†":"+","•":"*","…":"...","₠":"ecu","₢":"cruzeiro","₣":"french franc","₤":"lira","₥":"mill","₦":"naira","₧":"peseta","₨":"rupee","₩":"won","₪":"new shequel","₫":"dong","€":"euro","₭":"kip","₮":"tugrik","₯":"drachma","₰":"penny","₱":"peso","₲":"guarani","₳":"austral","₴":"hryvnia","₵":"cedi","₸":"kazakhstani tenge","₹":"indian rupee","₺":"turkish lira","₽":"russian ruble","₿":"bitcoin","℠":"sm","™":"tm","∂":"d","∆":"delta","∑":"sum","∞":"infinity","♥":"love","元":"yuan","円":"yen","﷼":"rial","ﻵ":"laa","ﻷ":"laa","ﻹ":"lai","ﻻ":"la"}`), b = JSON.parse('{"bg":{"Й":"Y","Ц":"Ts","Щ":"Sht","Ъ":"A","Ь":"Y","й":"y","ц":"ts","щ":"sht","ъ":"a","ь":"y"},"de":{"Ä":"AE","ä":"ae","Ö":"OE","ö":"oe","Ü":"UE","ü":"ue","ß":"ss","%":"prozent","&":"und","|":"oder","∑":"summe","∞":"unendlich","♥":"liebe"},"es":{"%":"por ciento","&":"y","<":"menor que",">":"mayor que","|":"o","¢":"centavos","£":"libras","¤":"moneda","₣":"francos","∑":"suma","∞":"infinito","♥":"amor"},"fr":{"%":"pourcent","&":"et","<":"plus petit",">":"plus grand","|":"ou","¢":"centime","£":"livre","¤":"devise","₣":"franc","∑":"somme","∞":"infini","♥":"amour"},"pt":{"%":"porcento","&":"e","<":"menor",">":"maior","|":"ou","¢":"centavo","∑":"soma","£":"libra","∞":"infinito","♥":"amor"},"uk":{"И":"Y","и":"y","Й":"Y","й":"y","Ц":"Ts","ц":"ts","Х":"Kh","х":"kh","Щ":"Shch","щ":"shch","Г":"H","г":"h"},"vi":{"Đ":"D","đ":"d"},"da":{"Ø":"OE","ø":"oe","Å":"AA","å":"aa","%":"procent","&":"og","|":"eller","$":"dollar","<":"mindre end",">":"større end"},"nb":{"&":"og","Å":"AA","Æ":"AE","Ø":"OE","å":"aa","æ":"ae","ø":"oe"},"it":{"&":"e"},"nl":{"&":"en"},"sv":{"&":"och","Å":"AA","Ä":"AE","Ö":"OE","å":"aa","ä":"ae","ö":"oe"}}');
+    function $(S, l) {
+      if (typeof S != "string")
+        throw new Error("slugify: string argument expected");
+      l = typeof l == "string" ? { replacement: l } : l || {};
+      var D = b[l.locale] || {}, A = l.replacement === void 0 ? "-" : l.replacement, Y = l.trim === void 0 ? !0 : l.trim, g = S.normalize().split("").reduce(function(w, j) {
+        var f = D[j];
+        return f === void 0 && (f = k[j]), f === void 0 && (f = j), f === A && (f = " "), w + f.replace(l.remove || /[^\w\s$*_+~.()'"!\-:@]+/g, "");
+      }, "");
+      return l.strict && (g = g.replace(/[^A-Za-z0-9\s]/g, "")), Y && (g = g.trim()), g = g.replace(/\s+/g, A), l.lower && (g = g.toLowerCase()), g;
+    }
+    return $.extend = function(S) {
+      Object.assign(k, S);
+    }, $;
+  });
+})(K);
+var ne = K.exports;
+const re = /* @__PURE__ */ G(ne);
+var R = { exports: {} };
+(function(d, I) {
+  (function(k, b) {
+    d.exports = b();
+  })(q, function() {
+    var k = 1e3, b = 6e4, $ = 36e5, S = "millisecond", l = "second", D = "minute", A = "hour", Y = "day", g = "week", w = "month", j = "quarter", f = "year", x = "date", J = "Invalid Date", V = /^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[Tt\s]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?[.:]?(\d+)?$/, Q = /\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g, X = { name: "en", weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"), months: "January_February_March_April_May_June_July_August_September_October_November_December".split("_"), ordinal: function(r) {
+      var o = ["th", "st", "nd", "rd"], e = r % 100;
+      return "[" + r + (o[(e - 20) % 10] || o[e] || o[0]) + "]";
+    } }, z = function(r, o, e) {
+      var n = String(r);
+      return !n || n.length >= o ? r : "" + Array(o + 1 - n.length).join(e) + r;
+    }, ee = { s: z, z: function(r) {
+      var o = -r.utcOffset(), e = Math.abs(o), n = Math.floor(e / 60), t = e % 60;
+      return (o <= 0 ? "+" : "-") + z(n, 2, "0") + ":" + z(t, 2, "0");
+    }, m: function r(o, e) {
+      if (o.date() < e.date()) return -r(e, o);
+      var n = 12 * (e.year() - o.year()) + (e.month() - o.month()), t = o.clone().add(n, w), a = e - t < 0, i = o.clone().add(n + (a ? -1 : 1), w);
+      return +(-(n + (e - t) / (a ? t - i : i - t)) || 0);
+    }, a: function(r) {
+      return r < 0 ? Math.ceil(r) || 0 : Math.floor(r);
+    }, p: function(r) {
+      return { M: w, y: f, w: g, d: Y, D: x, h: A, m: D, s: l, ms: S, Q: j }[r] || String(r || "").toLowerCase().replace(/s$/, "");
+    }, u: function(r) {
+      return r === void 0;
+    } }, W = "en", O = {};
+    O[W] = X;
+    var P = "$isDayjsObject", F = function(r) {
+      return r instanceof N || !(!r || !r[P]);
+    }, L = function r(o, e, n) {
+      var t;
+      if (!o) return W;
+      if (typeof o == "string") {
+        var a = o.toLowerCase();
+        O[a] && (t = a), e && (O[a] = e, t = a);
+        var i = o.split("-");
+        if (!t && i.length > 1) return r(i[0]);
+      } else {
+        var u = o.name;
+        O[u] = o, t = u;
+      }
+      return !n && t && (W = t), t || !n && W;
+    }, c = function(r, o) {
+      if (F(r)) return r.clone();
+      var e = typeof o == "object" ? o : {};
+      return e.date = r, e.args = arguments, new N(e);
+    }, s = ee;
+    s.l = L, s.i = F, s.w = function(r, o) {
+      return c(r, { locale: o.$L, utc: o.$u, x: o.$x, $offset: o.$offset });
+    };
+    var N = function() {
+      function r(e) {
+        this.$L = L(e.locale, null, !0), this.parse(e), this.$x = this.$x || e.x || {}, this[P] = !0;
+      }
+      var o = r.prototype;
+      return o.parse = function(e) {
+        this.$d = function(n) {
+          var t = n.date, a = n.utc;
+          if (t === null) return /* @__PURE__ */ new Date(NaN);
+          if (s.u(t)) return /* @__PURE__ */ new Date();
+          if (t instanceof Date) return new Date(t);
+          if (typeof t == "string" && !/Z$/i.test(t)) {
+            var i = t.match(V);
+            if (i) {
+              var u = i[2] - 1 || 0, h = (i[7] || "0").substring(0, 3);
+              return a ? new Date(Date.UTC(i[1], u, i[3] || 1, i[4] || 0, i[5] || 0, i[6] || 0, h)) : new Date(i[1], u, i[3] || 1, i[4] || 0, i[5] || 0, i[6] || 0, h);
+            }
+          }
+          return new Date(t);
+        }(e), this.init();
+      }, o.init = function() {
+        var e = this.$d;
+        this.$y = e.getFullYear(), this.$M = e.getMonth(), this.$D = e.getDate(), this.$W = e.getDay(), this.$H = e.getHours(), this.$m = e.getMinutes(), this.$s = e.getSeconds(), this.$ms = e.getMilliseconds();
+      }, o.$utils = function() {
+        return s;
+      }, o.isValid = function() {
+        return this.$d.toString() !== J;
+      }, o.isSame = function(e, n) {
+        var t = c(e);
+        return this.startOf(n) <= t && t <= this.endOf(n);
+      }, o.isAfter = function(e, n) {
+        return c(e) < this.startOf(n);
+      }, o.isBefore = function(e, n) {
+        return this.endOf(n) < c(e);
+      }, o.$g = function(e, n, t) {
+        return s.u(e) ? this[n] : this.set(t, e);
+      }, o.unix = function() {
+        return Math.floor(this.valueOf() / 1e3);
+      }, o.valueOf = function() {
+        return this.$d.getTime();
+      }, o.startOf = function(e, n) {
+        var t = this, a = !!s.u(n) || n, i = s.p(e), u = function(T, p) {
+          var M = s.w(t.$u ? Date.UTC(t.$y, p, T) : new Date(t.$y, p, T), t);
+          return a ? M : M.endOf(Y);
+        }, h = function(T, p) {
+          return s.w(t.toDate()[T].apply(t.toDate("s"), (a ? [0, 0, 0, 0] : [23, 59, 59, 999]).slice(p)), t);
+        }, y = this.$W, m = this.$M, v = this.$D, H = "set" + (this.$u ? "UTC" : "");
+        switch (i) {
+          case f:
+            return a ? u(1, 0) : u(31, 11);
+          case w:
+            return a ? u(1, m) : u(0, m + 1);
+          case g:
+            var E = this.$locale().weekStart || 0, C = (y < E ? y + 7 : y) - E;
+            return u(a ? v - C : v + (6 - C), m);
+          case Y:
+          case x:
+            return h(H + "Hours", 0);
+          case A:
+            return h(H + "Minutes", 1);
+          case D:
+            return h(H + "Seconds", 2);
+          case l:
+            return h(H + "Milliseconds", 3);
+          default:
+            return this.clone();
+        }
+      }, o.endOf = function(e) {
+        return this.startOf(e, !1);
+      }, o.$set = function(e, n) {
+        var t, a = s.p(e), i = "set" + (this.$u ? "UTC" : ""), u = (t = {}, t[Y] = i + "Date", t[x] = i + "Date", t[w] = i + "Month", t[f] = i + "FullYear", t[A] = i + "Hours", t[D] = i + "Minutes", t[l] = i + "Seconds", t[S] = i + "Milliseconds", t)[a], h = a === Y ? this.$D + (n - this.$W) : n;
+        if (a === w || a === f) {
+          var y = this.clone().set(x, 1);
+          y.$d[u](h), y.init(), this.$d = y.set(x, Math.min(this.$D, y.daysInMonth())).$d;
+        } else u && this.$d[u](h);
+        return this.init(), this;
+      }, o.set = function(e, n) {
+        return this.clone().$set(e, n);
+      }, o.get = function(e) {
+        return this[s.p(e)]();
+      }, o.add = function(e, n) {
+        var t, a = this;
+        e = Number(e);
+        var i = s.p(n), u = function(m) {
+          var v = c(a);
+          return s.w(v.date(v.date() + Math.round(m * e)), a);
+        };
+        if (i === w) return this.set(w, this.$M + e);
+        if (i === f) return this.set(f, this.$y + e);
+        if (i === Y) return u(1);
+        if (i === g) return u(7);
+        var h = (t = {}, t[D] = b, t[A] = $, t[l] = k, t)[i] || 1, y = this.$d.getTime() + e * h;
+        return s.w(y, this);
+      }, o.subtract = function(e, n) {
+        return this.add(-1 * e, n);
+      }, o.format = function(e) {
+        var n = this, t = this.$locale();
+        if (!this.isValid()) return t.invalidDate || J;
+        var a = e || "YYYY-MM-DDTHH:mm:ssZ", i = s.z(this), u = this.$H, h = this.$m, y = this.$M, m = t.weekdays, v = t.months, H = t.meridiem, E = function(p, M, U, _) {
+          return p && (p[M] || p(n, a)) || U[M].slice(0, _);
+        }, C = function(p) {
+          return s.s(u % 12 || 12, p, "0");
+        }, T = H || function(p, M, U) {
+          var _ = p < 12 ? "AM" : "PM";
+          return U ? _.toLowerCase() : _;
+        };
+        return a.replace(Q, function(p, M) {
+          return M || function(U) {
+            switch (U) {
+              case "YY":
+                return String(n.$y).slice(-2);
+              case "YYYY":
+                return s.s(n.$y, 4, "0");
+              case "M":
+                return y + 1;
+              case "MM":
+                return s.s(y + 1, 2, "0");
+              case "MMM":
+                return E(t.monthsShort, y, v, 3);
+              case "MMMM":
+                return E(v, y);
+              case "D":
+                return n.$D;
+              case "DD":
+                return s.s(n.$D, 2, "0");
+              case "d":
+                return String(n.$W);
+              case "dd":
+                return E(t.weekdaysMin, n.$W, m, 2);
+              case "ddd":
+                return E(t.weekdaysShort, n.$W, m, 3);
+              case "dddd":
+                return m[n.$W];
+              case "H":
+                return String(u);
+              case "HH":
+                return s.s(u, 2, "0");
+              case "h":
+                return C(1);
+              case "hh":
+                return C(2);
+              case "a":
+                return T(u, h, !0);
+              case "A":
+                return T(u, h, !1);
+              case "m":
+                return String(h);
+              case "mm":
+                return s.s(h, 2, "0");
+              case "s":
+                return String(n.$s);
+              case "ss":
+                return s.s(n.$s, 2, "0");
+              case "SSS":
+                return s.s(n.$ms, 3, "0");
+              case "Z":
+                return i;
+            }
+            return null;
+          }(p) || i.replace(":", "");
+        });
+      }, o.utcOffset = function() {
+        return 15 * -Math.round(this.$d.getTimezoneOffset() / 15);
+      }, o.diff = function(e, n, t) {
+        var a, i = this, u = s.p(n), h = c(e), y = (h.utcOffset() - this.utcOffset()) * b, m = this - h, v = function() {
+          return s.m(i, h);
+        };
+        switch (u) {
+          case f:
+            a = v() / 12;
+            break;
+          case w:
+            a = v();
+            break;
+          case j:
+            a = v() / 3;
+            break;
+          case g:
+            a = (m - y) / 6048e5;
+            break;
+          case Y:
+            a = (m - y) / 864e5;
+            break;
+          case A:
+            a = m / $;
+            break;
+          case D:
+            a = m / b;
+            break;
+          case l:
+            a = m / k;
+            break;
+          default:
+            a = m;
+        }
+        return t ? a : s.a(a);
+      }, o.daysInMonth = function() {
+        return this.endOf(w).$D;
+      }, o.$locale = function() {
+        return O[this.$L];
+      }, o.locale = function(e, n) {
+        if (!e) return this.$L;
+        var t = this.clone(), a = L(e, n, !0);
+        return a && (t.$L = a), t;
+      }, o.clone = function() {
+        return s.w(this.$d, this);
+      }, o.toDate = function() {
+        return new Date(this.valueOf());
+      }, o.toJSON = function() {
+        return this.isValid() ? this.toISOString() : null;
+      }, o.toISOString = function() {
+        return this.$d.toISOString();
+      }, o.toString = function() {
+        return this.$d.toUTCString();
+      }, r;
+    }(), B = N.prototype;
+    return c.prototype = B, [["$ms", S], ["$s", l], ["$m", D], ["$H", A], ["$W", Y], ["$M", w], ["$y", f], ["$D", x]].forEach(function(r) {
+      B[r[1]] = function(o) {
+        return this.$g(o, r[0], r[1]);
+      };
+    }), c.extend = function(r, o) {
+      return r.$i || (r(o, N, c), r.$i = !0), c;
+    }, c.locale = L, c.isDayjs = F, c.unix = function(r) {
+      return c(1e3 * r);
+    }, c.en = O[W], c.Ls = O, c.p = {}, c;
+  });
+})(R);
+var ae = R.exports;
+const ie = /* @__PURE__ */ G(ae);
+metadata = {
+  systemName: "com.demo.fortunecookie",
+  displayName: "Fortune Cookie Broker",
+  description: "Returns random fortune cookies with extra metadata, powered by npm modules!",
+  configuration: {}
+};
+ondescribe = async function() {
+  postSchema({
+    objects: {
+      fortune: {
+        displayName: "Fortune",
+        description: "A random fortune cookie message.",
+        properties: {
+          fortune: { displayName: "Fortune", type: "string" },
+          slug: { displayName: "Slug", type: "string" },
+          date: { displayName: "Date", type: "string" }
+        },
+        methods: {
+          get: {
+            displayName: "Get Fortune",
+            type: "read",
+            inputs: [],
+            outputs: ["fortune", "slug", "date"]
+          }
+        }
+      }
+    }
+  });
+};
+onexecute = async function({
+  objectName: d,
+  methodName: I,
+  properties: k,
+  parameters: b,
+  configuration: $
+}) {
+  switch (d) {
+    case "fortune":
+      await se(I);
+      break;
+    default:
+      throw new Error("Object '" + d + "' not supported.");
+  }
+};
+async function se(d) {
+  switch (d) {
+    case "get":
+      await ue();
+      break;
+    default:
+      throw new Error("Method '" + d + "' not supported.");
+  }
+}
+async function ue() {
+  const d = Math.floor(Math.random() * Z.length), I = Z[d], k = re(I, { lower: !0, strict: !0 }), b = ie().format("YYYY-MM-DD HH:mm:ss");
+  postResult({
+    fortune: I,
+    slug: k,
+    date: b
+  });
+}
+//# sourceMappingURL=index.js.map
